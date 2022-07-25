@@ -1,0 +1,39 @@
+our project contain three module
+	1.flipflop
+	2.mux
+	3.lfsr
+the modules and it's hierarchy are as below.
+
+
+module flipflop(q, clk, rst, d);
+input clk;
+input rst;
+input d;
+output q;
+reg q;
+
+...
+endmodule ;
+
+
+module mux(q, control, a, b);
+output q;
+reg q;
+input control, a, b
+...
+endmodule;
+
+
+module lfsr(q, clk, rst, seed, load);
+output q;
+input [3:0] seed;
+input load;
+input rst;
+
+wire [3:0] state_out;
+wire [3:0] state_in;
+...
+endmodule;
+
+we can very the bit width of random number generator in lfsr module .
+as mansion in the report file , we are going to generat a 13 bit random number. 
